@@ -10,7 +10,6 @@ import { CounterState } from '../state/counter.state';
 })
 export class CounterOutputComponent implements OnInit, OnDestroy {
   counter?: number;
-  counter$?: Observable<CounterState>;
 
   counterSubscription?: Subscription;
 
@@ -23,9 +22,6 @@ export class CounterOutputComponent implements OnInit, OnDestroy {
       .subscribe((data) => {
         this.counter = data.counter;
       });
-
-    // 2nd approach
-    this.counter$ = this.store.select('counter');
   }
 
   ngOnDestroy(): void {
