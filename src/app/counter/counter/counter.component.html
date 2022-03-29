@@ -8,7 +8,7 @@
 
 
         <div class="my-3">
-            <app-counter-buttons>
+            <app-counter-buttons (increment)="onIncrement()" (decrement)="onDecrement()" (reset)="onReset()">
 
             </app-counter-buttons>
         </div>
