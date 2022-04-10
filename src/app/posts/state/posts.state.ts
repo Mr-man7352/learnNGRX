@@ -12,12 +12,12 @@ export const initialState: PostsState = {
       description: 'this is it',
     },
     {
-      id: '1',
+      id: '2',
       title: 'manish',
       description: 'this is it',
     },
     {
-      id: '1',
+      id: '3',
       title: 'manish',
       description: 'this is it',
     },
